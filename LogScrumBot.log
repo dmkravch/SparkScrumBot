@@ -1,0 +1,336 @@
+2018-01-01 13:43:34,903 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-01 13:43:35,006 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-01 13:43:53,059 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-01 13:43:53,091 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-01 14:49:54,322 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-01 14:49:54,371 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-01 14:52:57,796 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-01 14:52:57,896 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-02 16:07:01,435 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:07:04,368 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-02 16:08:15,915 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:08:16,001 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-02 16:18:13,472 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:18:13,633 "GET /v1/memberships HTTP/1.1" 200 None
+2018-01-02 16:20:22,430 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:20:22,601 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 16:22:04,675 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:22:04,859 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 16:22:46,934 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 16:22:46,990 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:23:03,488 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:23:03,662 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:28:56,224 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:28:56,340 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:30:02,073 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:30:02,203 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:31:29,844 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:31:29,956 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:33:49,802 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:33:49,937 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 17:33:56,152 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 17:33:56,212 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:01:03,659 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:01:03,843 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:02:11,952 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:02:12,167 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:05:47,817 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:05:47,929 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:06:13,272 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:06:13,326 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:06:36,335 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:06:36,415 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:06:59,635 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:06:59,814 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:07:06,659 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:07:06,751 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:07:25,558 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:07:25,694 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:07:37,431 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:07:37,528 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:07:50,413 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:07:50,466 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:11:10,898 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:11:11,051 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:14:48,020 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:48,131 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:14:48,134 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:48,474 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:14:48,477 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:50,281 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:14:50,284 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:51,826 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:14:51,829 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:53,466 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:14:53,469 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:54,560 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:14:54,563 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:14:54,937 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:47,913 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:48,070 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:22:48,073 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:48,331 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:48,336 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:22:48,337 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:48,684 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:48,688 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:22:48,689 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:49,392 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:49,396 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:22:49,397 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:49,657 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:49,661 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:22:49,662 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:50,025 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:50,029 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:22:50,030 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:22:50,416 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:22:50,420 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:38,469 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:38,608 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:24:38,612 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:38,942 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:38,946 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:38,947 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:39,418 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:39,422 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:39,423 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:39,768 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:39,772 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:39,773 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:40,256 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:40,260 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:40,261 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:40,516 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:40,520 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:24:40,521 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:24:40,861 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:24:40,865 ERROR: with MongoDB document must be an instance of dict, bson.son.SON, bson.raw_bson.RawBSONDocument, or a type that inherits from collections.MutableMapping
+2018-01-02 20:27:35,940 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:36,106 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:27:36,109 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:36,488 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:27:36,502 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:36,687 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:27:36,696 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:36,926 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:27:36,933 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:37,293 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:27:37,300 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:37,676 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:27:37,683 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:27:38,089 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:47,408 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:47,574 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:33:47,577 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:47,745 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:47,753 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:47,943 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:47,950 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:48,561 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:48,568 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:48,936 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:48,943 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:49,213 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:33:49,219 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:33:49,626 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:32,764 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:32,920 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:36:32,924 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:33,087 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:33,095 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:33,430 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:33,438 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:33,711 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:33,719 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:33,944 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:33,951 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:34,529 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:36:34,536 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:36:34,888 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:12,272 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:12,380 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:38:12,384 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:12,980 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:12,987 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:33,739 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:33,747 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:34,307 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:34,315 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:42,904 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:42,913 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:43,271 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:38:43,279 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:38:43,510 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:39:45,445 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:39:45,533 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:39:45,537 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:39:45,702 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:45:58,645 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:45:58,769 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:45:58,772 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:45:59,031 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:45:59,038 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:45:59,429 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:45:59,438 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:45:59,659 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:45:59,666 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:46:00,055 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:46:00,062 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:46:00,480 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:46:00,486 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:46:00,845 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:32,079 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:32,184 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:47:32,187 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:32,371 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:32,379 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:32,597 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:32,606 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:32,871 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:32,878 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:33,092 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:33,100 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:33,363 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:47:33,372 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:47:33,600 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:30,085 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:30,296 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:52:30,300 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:30,473 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:30,480 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:30,785 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:30,793 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:31,030 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:31,037 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:31,347 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:31,355 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:31,910 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:52:31,917 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:52:32,135 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:53,268 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:53,455 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 20:53:53,460 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:53,823 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:53,837 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:54,014 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:54,028 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:54,237 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:54,251 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:54,425 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:54,439 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:54,708 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 20:53:54,722 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 20:53:54,903 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:00,583 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:00,883 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 21:01:00,886 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:01,245 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:01,261 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:01,653 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:01,670 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:02,141 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:02,156 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:02,979 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:02,993 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:03,975 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:01:03,990 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:01:04,313 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:08,131 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:08,278 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 21:04:08,282 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:08,592 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:08,600 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:08,972 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:08,981 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:09,256 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:09,263 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:09,571 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:09,578 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:09,854 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 21:04:09,860 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 21:04:10,038 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:52,931 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:53,046 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 22:12:53,049 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:53,261 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:53,269 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:53,626 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:53,635 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:53,848 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:53,856 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:54,069 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:54,077 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:54,215 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:12:54,222 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:12:54,432 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:09,012 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:09,165 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 22:18:09,169 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:09,328 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:09,332 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:09,333 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:09,486 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:09,490 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:09,491 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:09,816 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:09,819 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:09,820 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:10,112 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:10,116 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:10,117 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:10,365 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:10,369 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:10,370 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:10,849 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-02 22:18:10,853 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:58,949 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-02 22:18:59,031 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-02 22:18:59,035 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:59,036 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:59,038 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:59,039 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:59,041 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-02 22:18:59,042 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:15:10,996 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:15:11,347 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:15:11,359 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:15:11,361 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:15:11,362 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:15:11,364 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:15:11,365 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:15:11,367 ERROR: with MongoDB global name 'pointer' is not defined
+2018-01-03 10:17:03,279 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:17:03,402 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:17:03,406 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:17:03,408 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:17:03,409 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:17:03,411 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:17:03,412 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:17:03,413 ERROR: with MongoDB if no direction is specified, key_or_list must be an instance of list
+2018-01-03 10:22:53,583 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:22:53,702 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:23:58,424 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:23:58,548 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:24:15,628 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:24:15,755 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:26:00,611 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:26:00,726 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:28:21,992 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:28:22,121 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:28:30,364 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:28:30,429 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:30:08,769 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:30:08,870 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:30:23,200 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:30:23,354 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:30:56,968 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:30:57,016 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:31:14,930 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:31:15,086 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:31:28,573 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:31:28,620 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:31:41,085 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:31:41,168 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-03 10:31:52,356 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-03 10:31:52,411 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
