@@ -165,6 +165,15 @@ def get_pointer_from_mongodb(user_email):
     client.close()
     return True
 
+def define_response_based_keywords(message):
+    if message == 'help' or message == 'manual':
+        return "Help description"
+    else:
+        pass
+
+def 
+
+
 message1 = 'Hello User. Please, answer 3 following questions, Please!'
 
 for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
@@ -189,9 +198,21 @@ def handle_message():
     txt=get_message(accesstoken,msgid)
     logging.debug("Retereived Message: " + txt['text'])
     message=str(txt["text"]).lower()
-    personid=data["data"]["personId"]  
+    possible_response = define_response_based_keywords(message)
+    personid=data["data"]["personId"]
+    personEmail = data["data"]["personEmail"]
+    Pointer = get_pointer_from_mongodb(personEmail)
     if personid==me.id:
         return 'OK'
+    elif possible_response:
+        resp_dict = post_message(accesstoken,roomid,possible_response)
+    elif not Pointer:
+        resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
+        return True
+    elif Pointer == 0:
+        resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
+#to add the abbility to insert messages into the mongodb
+
     else:
-    	resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
+        resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
     return "OK"
