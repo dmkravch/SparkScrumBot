@@ -118,7 +118,7 @@ def insert_pointer_into_mongodb(data, user_email):
     client.close()
     return 
 
-def insert_data_into_mongodb(data, user_email):
+def insert_data_into_mongodb(data, user_email, pointer):
     from pymongo import MongoClient
     #serverSelectionTimeoutMS let us proceed with the bot script even if the DB is not reachable
     client = pymongo.MongoClient(host=['localhost:27017'],serverSelectionTimeoutMS=1000)
@@ -128,6 +128,7 @@ def insert_data_into_mongodb(data, user_email):
     collection = db[user_collection]
     #Exception handling, catching everything as there might be some specific errors
     try:
+        data['Pointer'] = pointer
         result=db[user_collection].insert_one(data)
         print(result)
     except Exception as e:
@@ -178,14 +179,14 @@ def get_pointer_from_mongodb(user_email):
     return True
 
 def define_response_based_keywords(message):
-    if message == 'help' or message == 'manual':
-        return "Help description"
+    if 'help' in message or 'manual' in message:
+        return "Help description 235"
     else:
         pass
 
 today = datetime.date.today().isoformat()
 
-message0 = 'Hello User.  Today is ' + today + '!   Please, answer 3 following questions about the project!'
+message0 = 'Hello!  Today is ' + today + '!   Please, answer 3 following questions about the project!'
 message1 = '1.  What did you do yesterday?'
 message2 = '2.  What will you do today?'
 message3 = '3.  Are there any impediments in your way?'
@@ -196,16 +197,15 @@ message5 = 'Team. Today\'s report from '
 
 #text = 'Hi ' + user_email +' your order has been processed.'
 #markdown = 'Hi <@personEmail:' + user_email + '|Dmytro>, your order has been processed.'
-
-for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
-    post_message_based_on_email(accesstoken,email_address,message0)
-    post_message_based_on_email(accesstoken,email_address,message1)
-    #post_message_with_markdown(accesstoken, roomId, text, markdown)
-    insert_pointer_into_mongodb ({'pointer':1}, email_address)
+now = datetime.datetime.now()
+if 9 <= now.hour <= 10:
+    for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
+        post_message_based_on_email(accesstoken,email_address,message0)
+        post_message_based_on_email(accesstoken,email_address,message1)
+        #post_message_with_markdown(accesstoken, roomId, text, markdown)
+        insert_pointer_into_mongodb ({'pointer':1}, email_address)
 
     #get_pointer_from_mongodb(email_address)
-
-#get_data_from_mongodb(email_address, 3)
 
 a = '**'
 
@@ -226,34 +226,37 @@ def handle_message():
     personid=data["data"]["personId"]
     user_email = data["data"]["personEmail"]
     Pointer = get_pointer_from_mongodb(user_email)
+    logging.debug("Retreived pointer: "+str(Pointer))
     if personid==me.id:
         return 'OK'
-    elif possible_response:
-        logging.debug("possible_response: "+ possible_response)
-        resp_dict = post_message(accesstoken,roomid,possible_response)
-        insert_data_into_mongodb(txt, user_email)
     elif not Pointer:
         logging.debug("If not Pointer: "+str(Pointer))
+        insert_data_into_mongodb(txt, user_email, 999)
         resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
-    elif Pointer == 0:
-        logging.debug("Pointer 0: "+str(Pointer))
-        resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
-        insert_data_into_mongodb(txt, user_email)
+    elif Pointer == 10:
+        if possible_response:
+            logging.debug("possible_response: "+ possible_response)
+            resp_dict = post_message(accesstoken,roomid,possible_response)
+            insert_data_into_mongodb(txt, user_email, Pointer)
+        else:           
+            logging.debug("Pointer 0: "+str(Pointer))
+            resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
+            insert_data_into_mongodb(txt, user_email, Pointer)
     elif Pointer == 1:
         logging.debug("Pointer 1: "+str(Pointer))
         resp_dict = post_message(accesstoken,roomid,message2)
-        insert_data_into_mongodb(txt, user_email)
+        insert_data_into_mongodb(txt, user_email, Pointer)
         insert_pointer_into_mongodb ({'pointer':2}, user_email)
     elif Pointer == 2:
         logging.debug("Pointer 2: "+str(Pointer))
         resp_dict = post_message(accesstoken,roomid,message3)
-        insert_data_into_mongodb(txt, user_email)
+        insert_data_into_mongodb(txt, user_email, Pointer)
         insert_pointer_into_mongodb ({'pointer':3}, user_email)
     elif Pointer == 3:
         logging.debug("Pointer 3: "+str(Pointer))
         resp_dict = post_message(accesstoken,roomid,message4)
-        insert_data_into_mongodb(txt, user_email)
-        insert_pointer_into_mongodb ({'pointer':0}, user_email)
+        insert_data_into_mongodb(txt, user_email,Pointer)
+        insert_pointer_into_mongodb ({'pointer':10}, user_email)
         list_of_answers = get_data_from_mongodb(user_email,3)
         post_to_general_space = message5 + user_email + '\n'+  message1 +'\n'+  list_of_answers[2] + '\n'
         post_to_general_space_with_markdown = message5 + '<@personEmail:' + user_email + '>' +'  \n  '+ message1 +'  \n  '+ a + list_of_answers[2] + a + '  \n  ' + message2 + '  \n  ' + a + list_of_answers[1] +a + '  \n  ' + message3 + '  \n  ' + a + list_of_answers[0] + a
@@ -262,6 +265,10 @@ def handle_message():
         roomid = 'Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj'
         #resp_dict = post_message(accesstoken,roomid,post_to_general_space)
         resp_dict = post_message_with_markdown(accesstoken, roomid, post_to_general_space, post_to_general_space_with_markdown)
+    elif possible_response:
+        logging.debug("possible_response: "+ possible_response)
+        resp_dict = post_message(accesstoken,roomid,possible_response)
+        insert_data_into_mongodb(txt, user_email, Pointer)
     else:
         logging.debug("Entering the last else statement. ")
         resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
