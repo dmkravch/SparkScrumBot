@@ -14,7 +14,7 @@ i=0
 logging.basicConfig(filename='LogScrumBot.log',level=logging.DEBUG,format='%(asctime)s %(message)s')
 app = Flask(__name__)
 
-accesstoken="ZTE4MWNiNTktNGVmNS00MWVmLTg3NzAtZWM1ZDU1OTY0ODkyOTE4MDBjOTEtMWYy"
+accesstoken="ZGVjNzhkYjQtMTkzZi00YTc5LTk0ZjAtZmE5OTJkNmIyN2Y3Mjg1ZGE1OGQtZjkx"
 spark_api = CiscoSparkAPI(accesstoken)
 accesstoken="Bearer "+accesstoken
 #The main space ID with all the users in question
@@ -52,6 +52,14 @@ def post_message_based_on_email(at,toPersonEmail,text):
     dict['statuscode']=str(resp.status_code)
     return dict
 
+def post_message_with_markdown(at,roomId,text,markdown):
+    headers = {'Authorization':at, 'content-type':'application/json'}
+    payload = {'roomId':roomId, 'text':text, 'markdown':markdown}
+    resp = requests.post(url=_url('/messages'),json=payload, headers=headers)
+    dict = json.loads(resp.text)
+    dict['statuscode']=str(resp.status_code)
+    return dict
+
 def get_memberships(at, roomId):
     headers = {'Authorization':at,'content-type':'application/json'}
     payload = {'roomId':roomId}
@@ -84,7 +92,7 @@ def get_all_the_users_to_send_questions_to(accesstoken, roomID):
     for i in range(len(all_the_members)):
         list_of_emails.append(all_the_members[i]['personEmail'])
     #print(list_of_emails)
-    list_of_emails_to_exclude = ['Botforpipeline@sparkbot.io','eButler@sparkbot.io','dimon@cisco.com','findmysip@sparkbot.io','spark-cisco-it-admin-bot@cisco.com']
+    list_of_emails_to_exclude = ['ScrumBotIBM@sparkbot.io','Botforpipeline@sparkbot.io','eButler@sparkbot.io','dimon@cisco.com','findmysip@sparkbot.io','spark-cisco-it-admin-bot@cisco.com']
     for n in list_of_emails_to_exclude:
         try:
             list_of_emails.remove(n)
@@ -133,14 +141,18 @@ def get_data_from_mongodb(user_email,limit):
     client = pymongo.MongoClient(host=['localhost:27017'],serverSelectionTimeoutMS=1000)
     db = client.exampledb
     user_collection = 'Message_' + user_email
-    print(user_collection)
+   # print(user_collection)
     collection = db[user_collection]
+    list_of_answers = []
     #Exception handling, catching everything as there might be some specific errors
     try:
         result=db[user_collection].find().limit(limit).sort([('$natural', -1)])
-        #for doc in result:
-            #return doc['pointer']
-        print(result)
+        #print(result)
+        for doc in result:
+            list_of_answers.append(doc['text'])
+        #print (list_of_answers)
+        return list_of_answers
+            #return doc['text']            
     except Exception as e:
         logging.debug("ERROR: with MongoDB {0}".format(e))    
     client.close()
@@ -171,19 +183,31 @@ def define_response_based_keywords(message):
     else:
         pass
 
-def 
+today = datetime.date.today().isoformat()
+
+message0 = 'Hello User.  Today is ' + today + '!   Please, answer 3 following questions about the project!'
+message1 = '1.  What did you do yesterday?'
+message2 = '2.  What will you do today?'
+message3 = '3.  Are there any impediments in your way?'
+message4 = 'Thank you! Your answers will be posted in the General space.'
+message5 = 'Team. Today\'s report from '
 
 
-message1 = 'Hello User. Please, answer 3 following questions, Please!'
+
+#text = 'Hi ' + user_email +' your order has been processed.'
+#markdown = 'Hi <@personEmail:' + user_email + '|Dmytro>, your order has been processed.'
 
 for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
-    #post_message_based_on_email(accesstoken,email_address,message1)
-    #insert_pointer_into_mongodb ({'pointer':3}, email_address)
-    get_pointer_from_mongodb(email_address)
+    post_message_based_on_email(accesstoken,email_address,message0)
+    post_message_based_on_email(accesstoken,email_address,message1)
+    #post_message_with_markdown(accesstoken, roomId, text, markdown)
+    insert_pointer_into_mongodb ({'pointer':1}, email_address)
 
-today = datetime.date.today().isoformat()
-#today = '2017-09-22'
+    #get_pointer_from_mongodb(email_address)
 
+#get_data_from_mongodb(email_address, 3)
+
+a = '**'
 
 @app.route("/", methods=['POST'])
 def handle_message():
@@ -200,19 +224,45 @@ def handle_message():
     message=str(txt["text"]).lower()
     possible_response = define_response_based_keywords(message)
     personid=data["data"]["personId"]
-    personEmail = data["data"]["personEmail"]
-    Pointer = get_pointer_from_mongodb(personEmail)
+    user_email = data["data"]["personEmail"]
+    Pointer = get_pointer_from_mongodb(user_email)
     if personid==me.id:
         return 'OK'
     elif possible_response:
+        logging.debug("possible_response: "+ possible_response)
         resp_dict = post_message(accesstoken,roomid,possible_response)
+        insert_data_into_mongodb(txt, user_email)
     elif not Pointer:
+        logging.debug("If not Pointer: "+str(Pointer))
         resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
-        return True
     elif Pointer == 0:
+        logging.debug("Pointer 0: "+str(Pointer))
         resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
-#to add the abbility to insert messages into the mongodb
-
+        insert_data_into_mongodb(txt, user_email)
+    elif Pointer == 1:
+        logging.debug("Pointer 1: "+str(Pointer))
+        resp_dict = post_message(accesstoken,roomid,message2)
+        insert_data_into_mongodb(txt, user_email)
+        insert_pointer_into_mongodb ({'pointer':2}, user_email)
+    elif Pointer == 2:
+        logging.debug("Pointer 2: "+str(Pointer))
+        resp_dict = post_message(accesstoken,roomid,message3)
+        insert_data_into_mongodb(txt, user_email)
+        insert_pointer_into_mongodb ({'pointer':3}, user_email)
+    elif Pointer == 3:
+        logging.debug("Pointer 3: "+str(Pointer))
+        resp_dict = post_message(accesstoken,roomid,message4)
+        insert_data_into_mongodb(txt, user_email)
+        insert_pointer_into_mongodb ({'pointer':0}, user_email)
+        list_of_answers = get_data_from_mongodb(user_email,3)
+        post_to_general_space = message5 + user_email + '\n'+  message1 +'\n'+  list_of_answers[2] + '\n'
+        post_to_general_space_with_markdown = message5 + '<@personEmail:' + user_email + '>' +'  \n  '+ message1 +'  \n  '+ a + list_of_answers[2] + a + '  \n  ' + message2 + '  \n  ' + a + list_of_answers[1] +a + '  \n  ' + message3 + '  \n  ' + a + list_of_answers[0] + a
+        post_to_general_space = post_to_general_space + message2 + '\n' + list_of_answers[1] + '\n'
+        post_to_general_space = post_to_general_space + message3 + '\n' + list_of_answers[0]
+        roomid = 'Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj'
+        #resp_dict = post_message(accesstoken,roomid,post_to_general_space)
+        resp_dict = post_message_with_markdown(accesstoken, roomid, post_to_general_space, post_to_general_space_with_markdown)
     else:
+        logging.debug("Entering the last else statement. ")
         resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
     return "OK"
