@@ -219,11 +219,19 @@ if 9 <= now.hour <= 10:
     #get_pointer_from_mongodb(email_address)
 
 a = '**'
+webhook_id = 'Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOTJhYWE1NzctNTU0ZC00YTZlLTljM2MtNDAzNWU1N2RkYTQy'
 
 @app.route("/", methods=['POST'])
 def handle_message():
     me = spark_api.people.me()
     data = request.get_json()
+    if data["id"] != webhook_id:
+        logging.debug("Retereived Webhook_id doesnt match. Retreived: " + data["id"])
+        msgid=data["data"]["id"]
+        txt=get_message(accesstoken,msgid)
+        user_email = data["data"]["personEmail"]
+        insert_data_into_mongodb(txt, user_email, 666)
+        return 'ok' 
     logging.debug("Data received from the WebHook to Flask app:")
     logging.debug(data)
     msgid=data["data"]["id"]
