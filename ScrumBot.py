@@ -88,11 +88,16 @@ def parse_natural_text(user_text):
 list_of_emails = []
 
 def get_all_the_users_to_send_questions_to(accesstoken, roomID):
+    domains_to_exclude = '@sparkbot.io'
     all_the_members = get_memberships(accesstoken,roomID)['items']
     for i in range(len(all_the_members)):
         list_of_emails.append(all_the_members[i]['personEmail'])
     #print(list_of_emails)
-    list_of_emails_to_exclude = ['ScrumBotIBM@sparkbot.io','Botforpipeline@sparkbot.io','eButler@sparkbot.io','dimon@cisco.com','findmysip@sparkbot.io','spark-cisco-it-admin-bot@cisco.com']
+    list_of_emails_to_exclude = ['eButler@sparkbot.io','dimon@cisco.com','findmysip@sparkbot.io','spark-cisco-it-admin-bot@cisco.com']
+    for i in list_of_emails:
+        if domains_to_exclude in i:
+            list_of_emails_to_exclude.append(i)
+            #print(list_of_emails_to_exclude)
     for n in list_of_emails_to_exclude:
         try:
             list_of_emails.remove(n)
@@ -174,13 +179,16 @@ def get_pointer_from_mongodb(user_email):
         for doc in result:
             return doc['pointer']
     except Exception as e:
-        logging.debug("ERROR: with MongoDB {0}".format(e))    
+        logging.debug("ERROR: with MongoDB {0}".format(e))
+        return False    
     client.close()
-    return True
+    #return True
 
+
+help_message = 'Hello. My name is ScrumBotIBM. I\'m helpin the project team with daily tasks. Please, contact dmkravch@cisco.com if you need more inforamtion about the bot, or ahermoso@cisco.com if you need more inforamtion about the project. Thank you.'
 def define_response_based_keywords(message):
     if 'help' in message or 'manual' in message:
-        return "Help description 235"
+        return help_message
     else:
         pass
 
@@ -195,8 +203,11 @@ message5 = 'Team. Today\'s report from '
 
 
 
+
 #text = 'Hi ' + user_email +' your order has been processed.'
 #markdown = 'Hi <@personEmail:' + user_email + '|Dmytro>, your order has been processed.'
+#a = get_all_the_users_to_send_questions_to(accesstoken, roomID)
+#print(a)
 now = datetime.datetime.now()
 if 9 <= now.hour <= 10:
     for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
@@ -232,7 +243,8 @@ def handle_message():
     elif not Pointer:
         logging.debug("If not Pointer: "+str(Pointer))
         insert_data_into_mongodb(txt, user_email, 999)
-        resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
+        resp_dict = post_message(accesstoken,roomid,help_message)
+        insert_pointer_into_mongodb ({'pointer':20}, user_email)
     elif Pointer == 10:
         if possible_response:
             logging.debug("possible_response: "+ possible_response)
