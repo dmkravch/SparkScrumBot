@@ -10,17 +10,22 @@ import apiai
 import pymongo
 #for random choice in topic search
 from ciscosparkapi import CiscoSparkAPI, Webhook
+
+import config as cfg
+
 i=0
 logging.basicConfig(filename='LogScrumBot.log',level=logging.DEBUG,format='%(asctime)s %(message)s')
 app = Flask(__name__)
 
-accesstoken="ZGVjNzhkYjQtMTkzZi00YTc5LTk0ZjAtZmE5OTJkNmIyN2Y3Mjg1ZGE1OGQtZjkx"
+accesstoken = cfg.bot['token']
 spark_api = CiscoSparkAPI(accesstoken)
 accesstoken="Bearer "+accesstoken
 #The main space ID with all the users in question
-roomID='Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj'
+roomId = cfg.room['id']
+
+
 # Client Access Token for accessing our API AI Bot
-CLIENT_ACCESS_TOKEN = 'af585a7d41ac4fc5a8174a6cd7cd6651'
+CLIENT_ACCESS_TOKEN = cfg.apiai['token']
 ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
 response_message = []
 
@@ -68,7 +73,7 @@ def get_memberships(at, roomId):
     dict['statuscode']=str(resp.status_code)
     return dict
 
-def parse_natural_text(user_text):  
+def parse_natural_text(user_text):
     request = ai.text_request()
     request.query = user_text
     logging.debug("The request passed to the API.AI: " + request.query)
@@ -119,9 +124,9 @@ def insert_pointer_into_mongodb(data, user_email):
         result=db[user_email_pointer].insert_one(data)
         print(result)
     except Exception as e:
-        logging.debug("ERROR: with MongoDB {0}".format(e))    
+        logging.debug("ERROR: with MongoDB {0}".format(e))
     client.close()
-    return 
+    return
 
 def insert_data_into_mongodb(data, user_email, pointer):
     from pymongo import MongoClient
@@ -137,7 +142,7 @@ def insert_data_into_mongodb(data, user_email, pointer):
         result=db[user_collection].insert_one(data)
         print(result)
     except Exception as e:
-        logging.debug("ERROR: with MongoDB {0}".format(e))    
+        logging.debug("ERROR: with MongoDB {0}".format(e))
     client.close()
     return True
 
@@ -158,9 +163,9 @@ def get_data_from_mongodb(user_email,limit):
             list_of_answers.append(doc['text'])
         #print (list_of_answers)
         return list_of_answers
-            #return doc['text']            
+            #return doc['text']
     except Exception as e:
-        logging.debug("ERROR: with MongoDB {0}".format(e))    
+        logging.debug("ERROR: with MongoDB {0}".format(e))
     client.close()
     return True
 
@@ -180,7 +185,7 @@ def get_pointer_from_mongodb(user_email):
             return doc['pointer']
     except Exception as e:
         logging.debug("ERROR: with MongoDB {0}".format(e))
-        return False    
+        return False
     client.close()
     #return True
 
@@ -209,17 +214,23 @@ message5 = 'Team. Today\'s report from '
 #a = get_all_the_users_to_send_questions_to(accesstoken, roomID)
 #print(a)
 now = datetime.datetime.now()
+'''
 if 9 <= now.hour <= 10:
     for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomID):
         post_message_based_on_email(accesstoken,email_address,message0)
         post_message_based_on_email(accesstoken,email_address,message1)
         #post_message_with_markdown(accesstoken, roomId, text, markdown)
         insert_pointer_into_mongodb ({'pointer':1}, email_address)
-
+'''
     #get_pointer_from_mongodb(email_address)
+for email_address in get_all_the_users_to_send_questions_to(accesstoken, roomId):
+    post_message_based_on_email(accesstoken,email_address,message0)
+    post_message_based_on_email(accesstoken,email_address,message1)
+    #post_message_with_markdown(accesstoken, roomId, text, markdown)
+    insert_pointer_into_mongodb ({'pointer':1}, email_address)
 
 a = '**'
-webhook_id = 'Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOTJhYWE1NzctNTU0ZC00YTZlLTljM2MtNDAzNWU1N2RkYTQy'
+webhook_id = cfg.bot['webhook']
 
 @app.route("/", methods=['POST'])
 def handle_message():
@@ -231,7 +242,7 @@ def handle_message():
         txt=get_message(accesstoken,msgid)
         user_email = data["data"]["personEmail"]
         insert_data_into_mongodb(txt, user_email, 666)
-        return 'ok' 
+        return 'ok'
     logging.debug("Data received from the WebHook to Flask app:")
     logging.debug(data)
     msgid=data["data"]["id"]
@@ -258,7 +269,7 @@ def handle_message():
             logging.debug("possible_response: "+ possible_response)
             resp_dict = post_message(accesstoken,roomid,possible_response)
             insert_data_into_mongodb(txt, user_email, Pointer)
-        else:           
+        else:
             logging.debug("Pointer 0: "+str(Pointer))
             resp_dict = post_message(accesstoken,roomid,parse_natural_text(message))
             insert_data_into_mongodb(txt, user_email, Pointer)
@@ -278,12 +289,14 @@ def handle_message():
         insert_data_into_mongodb(txt, user_email,Pointer)
         insert_pointer_into_mongodb ({'pointer':10}, user_email)
         list_of_answers = get_data_from_mongodb(user_email,3)
+        logging.debug("Answer 1: "+list_of_answers[2])
         post_to_general_space = message5 + user_email + '\n'+  message1 +'\n'+  list_of_answers[2] + '\n'
-        post_to_general_space_with_markdown = message5 + '<@personEmail:' + user_email + '>' +'  \n  '+ message1 +'  \n  '+ a + list_of_answers[2] + a + '  \n  ' + message2 + '  \n  ' + a + list_of_answers[1] +a + '  \n  ' + message3 + '  \n  ' + a + list_of_answers[0] + a
+        post_to_general_space_with_markdown = message5 + '<@personEmail:' + user_email + '>' +'  \n  '+ message1 +'  \n  '+ a + str(list_of_answers[2]) + a + '  \n  ' + message2 + '  \n  ' + a + list_of_answers[1] +a + '  \n  ' + message3 + '  \n  ' + a + list_of_answers[0] + a
         post_to_general_space = post_to_general_space + message2 + '\n' + list_of_answers[1] + '\n'
         post_to_general_space = post_to_general_space + message3 + '\n' + list_of_answers[0]
-        roomid = 'Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj'
+        roomid = cfg.room['id']
         #resp_dict = post_message(accesstoken,roomid,post_to_general_space)
+        logging.debug("post_to_general_space_with_markdown: "+ post_to_general_space_with_markdown)
         resp_dict = post_message_with_markdown(accesstoken, roomid, post_to_general_space, post_to_general_space_with_markdown)
     elif possible_response:
         logging.debug("possible_response: "+ possible_response)
