@@ -5,7 +5,7 @@ Build on MongoDB and Flask.
 
 There is also a config file config.py, which looks like the following:
 
-'''python
+```python
 #!/usr/bin/env python
 bot = {"token": "Your Spark bot token",
        "webhook": "Your Spark web hook id"}
@@ -13,4 +13,4 @@ bot = {"token": "Your Spark bot token",
 room = {"id": "General space ID"}
 
 apiai = {"token": "Google API.AI access token"}
-'''
+```
