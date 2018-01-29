@@ -4751,3 +4751,58 @@ ds
 ww
 2018-01-10 14:57:08,836 Retreived pointer: True
 2018-01-10 14:57:08,837 18.221.216.175 - - [10/Jan/2018 14:57:08] "POST / HTTP/1.1" 200 -
+2018-01-11 14:24:37,422 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-11 14:24:37,841 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-11 14:24:55,257 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-11 14:24:55,316 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-11 14:25:24,450 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-11 14:25:24,565 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-11 14:25:44,566 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-11 14:25:44,792 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-15 09:30:13,045 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-15 09:30:13,134 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-15 10:02:57,863 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-15 10:02:57,935 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-15 10:12:27,940 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-15 10:12:28,049 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-15 10:14:57,202 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-15 10:14:57,378 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-29 13:38:20,685 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:20,835 "GET /v1/memberships?roomId=Y2lzY29zcGFyazovL3VzL1JPT00vODZjYzg4NzAtNjdjYy0xMWU3LTgxZTYtYzM1MDA1YTVkZTFj HTTP/1.1" 200 None
+2018-01-29 13:38:20,838 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:21,031 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:21,035 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:21,293 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:21,300 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:21,820 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:21,833 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:22,017 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:22,024 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:22,353 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:22,357 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:22,734 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:22,742 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:23,376 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:23,379 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:23,660 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:23,667 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:23,882 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:23,885 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:24,324 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:24,331 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:24,579 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:24,583 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:24,907 "POST /v1/messages HTTP/1.1" 200 None
+2018-01-29 13:38:24,917  * Running on http://ec2-52-15-78-148.us-east-2.compute.amazonaws.com:82/ (Press CTRL+C to quit)
+2018-01-29 13:38:24,931 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:25,116 Starting new HTTPS connection (2): api.ciscospark.com
+2018-01-29 13:38:25,276 "GET /v1/people/me HTTP/1.1" 200 None
+2018-01-29 13:38:25,277 Data received from the WebHook to Flask app:
+2018-01-29 13:38:25,277 {u'status': u'active', u'resource': u'messages', u'name': u'ScrumBotIBM2', u'created': u'2018-01-10T13:54:41.592Z', u'appId': u'Y2lzY29zcGFyazovL3VzL0FQUExJQ0FUSU9OL0MzMmM4MDc3NDBjNmU3ZGYxMWRhZjE2ZjIyOGRmNjI4YmJjYTQ5YmE1MmZlY2JiMmM3ZDUxNWNiNGEwY2M5MWFh', u'id': u'Y2lzY29zcGFyazovL3VzL1dFQkhPT0svOTJhYWE1NzctNTU0ZC00YTZlLTljM2MtNDAzNWU1N2RkYTQy', u'orgId': u'Y2lzY29zcGFyazovL3VzL09SR0FOSVpBVElPTi8xZWI2NWZkZi05NjQzLTQxN2YtOTk3NC1hZDcyY2FlMGUxMGY', u'createdBy': u'Y2lzY29zcGFyazovL3VzL1BFT1BMRS8xODI0YTBlOS00N2NhLTQyYWQtYWQ2Mi0zMzhhYTM4NjcwNTY', u'targetUrl': u'http://ec2-52-15-78-148.us-east-2.compute.amazonaws.com:82', u'ownedBy': u'creator', u'actorId': u'Y2lzY29zcGFyazovL3VzL1BFT1BMRS8xODI0YTBlOS00N2NhLTQyYWQtYWQ2Mi0zMzhhYTM4NjcwNTY', u'data': {u'roomType': u'direct', u'created': u'2018-01-29T13:38:24.814Z', u'personId': u'Y2lzY29zcGFyazovL3VzL1BFT1BMRS8xODI0YTBlOS00N2NhLTQyYWQtYWQ2Mi0zMzhhYTM4NjcwNTY', u'personEmail': u'ScrumBotIBM@sparkbot.io', u'roomId': u'Y2lzY29zcGFyazovL3VzL1JPT00vMTQ1NTdjYTktNzY3NC0zZDZkLTk0MDQtZDhlMDU5YTcwODgx', u'id': u'Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYWUwYjNjZTAtMDRmOS0xMWU4LTk1YzMtMjE1MDM2ODNjMDUy'}, u'event': u'created'}
+2018-01-29 13:38:25,277 Retreived message id: Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYWUwYjNjZTAtMDRmOS0xMWU4LTk1YzMtMjE1MDM2ODNjMDUy
+2018-01-29 13:38:25,278 Retereived roomId: Y2lzY29zcGFyazovL3VzL1JPT00vMTQ1NTdjYTktNzY3NC0zZDZkLTk0MDQtZDhlMDU5YTcwODgx
+2018-01-29 13:38:25,278 Starting new HTTPS connection (1): api.ciscospark.com
+2018-01-29 13:38:25,342 "GET /v1/messages/Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYWUwYjNjZTAtMDRmOS0xMWU4LTk1YzMtMjE1MDM2ODNjMDUy HTTP/1.1" 200 None
+2018-01-29 13:38:25,344 Retereived Message: 1.  What did you do yesterday?
+2018-01-29 13:38:25,348 Retreived pointer: None
+2018-01-29 13:38:25,348 18.221.216.175 - - [29/Jan/2018 13:38:25] "POST / HTTP/1.1" 200 -
